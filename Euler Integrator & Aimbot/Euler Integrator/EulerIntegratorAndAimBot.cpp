@@ -178,8 +178,8 @@ void InitSimulation()																	// ---------------------------------------
 void InitSimulationWorld()																// ----------------------------------------------------------------------------------------------
 {
 	world.gravity			= GRAVITY;													// Gravity will be -9.8f.
-	world.worldWidth		= 20;														// World Width will be 20m.
-	world.worldHeight		= 10;														// World Height will be 10m.
+	world.worldWidth		= 20.0f;													// World Width will be 20.0m.
+	world.worldHeight		= 10.0f;													// World Height will be 10.0m.
 	world.fluidVelocity		= ORIGIN;													// Fluid velocity will be a random value (-10.0f ~ 10.0f)
 	world.fluidDensity		= 1.2f;														// Fluid Density will be 1.2f (Air, 20º at 1 atm).
 	world.simulation_fps	= 60.0f;													// The simulation will run at 60 FPS. Change later to match real time (syncronized with the game).	

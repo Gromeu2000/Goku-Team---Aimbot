@@ -55,8 +55,8 @@ public:
 	
 public:
 	float	gravity;								//Gravity of the simulation world.
-	int		worldWidth;								//Width of the simulation world.
-	int		worldHeight;							//Height of the simulation world.
+	float	worldWidth;								//Width of the simulation world.
+	float	worldHeight;							//Height of the simulation world.
 	vec3d	fluidVelocity;							//Fluid velocity in the simulation world. (Air, Water...)
 	float	fluidDensity;							//Fluid density in the simulation world. (Air, Water...)
 
