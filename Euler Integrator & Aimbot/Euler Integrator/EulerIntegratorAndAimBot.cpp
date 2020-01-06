@@ -34,6 +34,7 @@ int main()
 	{
 		if (x == 'r')
 		{
+			timer = 0.0f;
 			cout << "--------------------------------------------" << endl;
 			cout << "If you want to continue press r" << endl << "If you want to exit press e" << endl << "Press C to see credits" << endl;
 			cin >> x;
@@ -130,6 +131,7 @@ void Monte_Carlo(int iterations, Particle& projectile, Particle& target)
 {
 	for (int i = 0; i < iterations; i++)
 	{
+		timer += 0.0166666666666667f;																	// We assume each iteration lasts this amount of time (normal delta time on a 60 FPS computer
 		cout << "Monte-Carlo " << i << endl;
 		
 		projectile.position			= ORIGIN;														// Resetting the projectile's position back to ORIGIN.
@@ -147,6 +149,7 @@ void Monte_Carlo(int iterations, Particle& projectile, Particle& target)
 
 			cout << "Final Speed: (" << projectile.speed.x << " " << projectile.speed.y << " " << projectile.speed.z << ")" << endl;
 			cout << "Throwing Angle: " << aimbot.angle << endl;
+			cout << "The iteration has last: " << timer << " seconds " << endl;
 
 			break;
 		}

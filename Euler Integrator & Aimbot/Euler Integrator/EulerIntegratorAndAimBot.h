@@ -96,3 +96,4 @@ World				world;													//Simulation World where the projectile and the Targ
 AimBotVariables		aimbot;													//AimBot relevant variables (angle, targetWasHit...)
 Particle			projectile;												//Projectile which needs to hit the target.
 Particle			target;													//Target that the projectile has to hit.
+float timer = 0.0f;																	// Timer
