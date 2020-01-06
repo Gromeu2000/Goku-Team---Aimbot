@@ -8,7 +8,7 @@ using namespace std;
 #define PI 3.1416f
 #define GRAVITY -9.8f
 #define ORIGIN vec3d({0.0f, 0.0f, 0.0f})
-#define ITERATIONS 1000
+#define ITERATIONS 100
 #define MAX_ANGLE 180.0f
 #define MAX_WIND_VEL 10.0f
 #define POS_MAX_RAND 10
@@ -18,6 +18,18 @@ int main()
 	// --- Monte-Carlo
 	InitSimulation();
 	Monte_Carlo(ITERATIONS, projectile, target);
+
+	cout << "--------------------------------------------" << endl;
+
+	char x;
+	cin >> x;
+
+	if (x == 'r')
+	{
+		cout << "--------------------------------------------" << endl;
+		InitSimulation();
+		Monte_Carlo(ITERATIONS, projectile, target);
+	}
 
 	system("pause");
 	return 0;
