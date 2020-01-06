@@ -24,8 +24,6 @@ int main()
 	char x;
 	cin >> x;
 
-	
-
 	if (x == 'e')
 	{
 		system("pause");
@@ -76,9 +74,13 @@ int main()
 			system("pause");
 			return 0;
 		}
-	}
 
-	
+		if (x != 'e' && x != 'r' && x != 'c')
+		{
+			cout << "In valid charter" << endl;
+			cin >> x;
+		}
+	}
 	
 }
 
