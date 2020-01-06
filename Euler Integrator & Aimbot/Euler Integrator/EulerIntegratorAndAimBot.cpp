@@ -24,15 +24,62 @@ int main()
 	char x;
 	cin >> x;
 
-	if (x == 'r')
+	
+
+	if (x == 'e')
 	{
-		cout << "--------------------------------------------" << endl;
-		InitSimulation();
-		Monte_Carlo(ITERATIONS, projectile, target);
+		system("pause");
+		return 0;
 	}
 
-	system("pause");
-	return 0;
+	while (x != 'e')
+	{
+		if (x == 'r')
+		{
+			cout << "--------------------------------------------" << endl;
+			cout << "If you want to continue press r" << endl << "If you want to exit press e" << endl << "Press C to see credits" << endl;
+			cin >> x;
+			InitSimulation();
+			Monte_Carlo(ITERATIONS, projectile, target);
+		}
+
+		if (x == 'c')
+		{
+			cout << "	               ..   						     	   " << endl;
+			cout << "                  \ `.  `								   " << endl;
+			cout << "                   \  \ |								   " << endl;
+			cout << "          __.._    |   \.       S O N - G O K U - TEAM©   " << endl;
+			cout << "   ..---~~     ~ . |    Y								   " << endl;
+			cout << "     ~-.          `|    |								   " << endl;
+			cout << "        `.               `~~--.						   " << endl;
+			cout << "          \                    ~.						   " << endl;
+			cout << "           \                     \__. . -- -  .		   " << endl;
+			cout << "     .-~~~~~      ,    ,            ~~~~~~---...._		   " << endl;
+			cout << "  .-~___        ,'/  ,'/ ,'\          __...---~~~		   " << endl;
+			cout << "        ~-.    /._\_( ,(/_. 7,-.    ~~---...__			   " << endl;
+			cout << "       _...>-  P''6=`_/'6'~   6)    ___...--~~~		   " << endl;
+			cout << "        ~~--._ \`--') `---'   9'  _..--~~~				   " << endl;
+			cout << "              ~\ ~~/_  ~~~   /`-.--~~					   " << endl;
+			cout << "                `.  ---    .'   \_						   " << endl;
+			cout << "                  `. ' _.-'     | ~-.,-------._		   " << endl;
+			cout << "              ..._../~~   ./       .-'    .-~~~-.		   " << endl;
+			cout << "        ,--~~~ ,'...\` _./.----~~.'/    /'       `-	   " << endl;
+			cout << "    _.-(      |\    `/~ _____..-' /    /      _.-~~`.	   " << endl;
+			cout << "   /   |     /. ^---~~~~       ' /    /     ,'  ~.   \	   " << endl;
+			cout << "  (    /    (  .           _ ' /'    /    ,/      \   )   " << endl;
+			cout << "  (`. |     `\   - - - - ~   /'      (   /         .  |   " << endl;
+			cout << "   \.\|       \            /'        \  |`.           /   " << endl;
+			cout << "   /.'\\      `\         /'           ~-\         .  /	   " << endl;
+			cout << "  /,   (        `\     /'                `.___..-      \  " << endl;
+			cout << " | |    \         `\_/'                  //      \.     | " << endl;
+
+			system("pause");
+			return 0;
+		}
+	}
+
+	
+	
 }
 
 // ------------------------------------------ AIMBOT / MONTE-CARLO ------------------------------------------
