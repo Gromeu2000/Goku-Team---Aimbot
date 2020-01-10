@@ -1,4 +1,4 @@
-*DEVELOPERS OF THE  EULER INTEGRATOR:*
+*DEVELOPERS OF THE AIMBOT:*
 
 
 - Adrián Mirabel   https://github.com/M1R4B3L
